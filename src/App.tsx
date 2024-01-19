@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const mockToDO = [
   {
     id: '1',
@@ -16,6 +18,7 @@ const mockToDO = [
   }
 ]
 function App (): JSX.Element {
+  const [todos, setTodos] = useState(mockToDO)
   return (
     <div>
       TODO con Typescript

@@ -23,6 +23,9 @@ export const Footer: React.FC<Props> = ({
         filterSelected={filterSelected}
         onFilterChange={handleFilterChange}
         />
+        {
+          completeCounts > 0 && (<button onClick={() => { onClearCompleted() }} className='clear-completed'>Borrar Todos</button>)
+        }
     </footer>
   )
 }

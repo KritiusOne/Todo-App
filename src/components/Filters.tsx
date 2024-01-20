@@ -12,7 +12,6 @@ export const Filters: React.FC<Props> = ({ filterSelected, onFilterChange }) => 
         Object.entries(FILTERS__BUTTON).map(([key, { href, literal }]) => {
           const isSelected = key === filterSelected
           const naming = isSelected ? 'selected' : ''
-          console.log({ naming })
           return (
             <li key={key}>
               <a href={href}

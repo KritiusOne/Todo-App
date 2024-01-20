@@ -7,3 +7,4 @@ export type TodoID = Pick<Todo, 'id'>
 export type TodoTitle = Pick<Todo, 'title'>
 export type TodoCompleted = Pick<Todo, 'completed'>
 export declare type ListOfTodo = Todo[]
+export type FiltersValue = typeof FILTERS__BUTTON[keyof typeof FILTERS]
